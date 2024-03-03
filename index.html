@@ -140,7 +140,6 @@
             height: 45vh;
             padding-top:8%;
             text-align: center;
-            border-block:10px;
             border-style:outset;
             border-bottom:hidden;
             border-right:hidden;
@@ -149,20 +148,40 @@
            
         }
         h1:hover{
-            border-color:#006600;
-            animation: backwards;
-            transform: skew(-20deg);
             border-left:hidden;
             color:white;
             cursor:all-scroll;
+            border-radius:20%;
             
         }
+
+
+        
+.biev {
+    position:initial;
+  border: 3px dashed transparent;
+  animation: rotateAnimation 2s infinite;
+  border-radius: 20%;
+}
+@keyframes rotateAnimation {
+  0% {
+    border-color: transparent transparent rgb(66, 248, 10) transparent;
+  }
+  25% {
+    border-color: rgb(42, 233, 4) transparent transparent transparent;
+  }
+  50% {
+    border-color: transparent rgb(103, 250, 6) transparent transparent;
+  }
+  75% {
+    border-color: transparent transparent transparent rgb(94, 255, 0);
+  }
+  100% {
+    border-color: transparent transparent rgb(7, 240, 26);
+  }
+}
+
        
-        .biev{
-            
-            transform: skew(10deg);
-           
-        }
 
         .nalin{
             overflow: hidden;  
@@ -261,6 +280,22 @@
             padding-top:2%;
             text-decoration: underline;
         }
+ hgroup{
+            color:green;
+            animation: colorChange 3s infinite alternate;
+
+}
+        @keyframes colorChange {
+            0%{
+                color:rgb(0, 255, 13);
+}
+50%{ color:rgb(43, 17, 196);
+}
+      100%{
+        color:green;}      
+        }
+
+        
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -295,16 +330,16 @@
         
             <hgroup class="paragraphe1"> 
                 Bonjour, Je m'appel Aliou etudiant en 1er systèmes numériques au Lycée Marc Seguin à Vénissieux,
-                passionné, par tous les segments de informations de la téchnologies (IA), plutard j'envissage d'être développeur web,
+                passionné, par les segments de informations de la téchnologies (IA), plutard j'envissage d'être développeur web,
                 Je suis opinâtre, et j'adore faire du sport, surtout le sport de combat voir me battre, juste pour me contrôler, mais cela ne veut pas dire que je suis agressif!
-                C'est juste pour échapper le mauvais temps de vouloire me battre,
-                Heure perdut: je deviens lecteur, sorti avec de amis c'est quelque choses qui m'arrive très rare, donc on peut dit que je suis casanier,
-                Il est très facile de me rencontrer au sport qu'ailleur! Pour finir ma couleur preffèrer, c'est de la verte! 
+              
+                Heure perdut: je deviens lecteur, sorti avec amical c'est quelque choses qui m'arrive très rare, donc on peut dit que je suis casanier,
+                Il est très facile de me rencontrer au sport qu'ailleur! la verte est ma couleur préférer! 
 
                 
         
             </hgroup>
-            <p class="s"> veuillez-contunuer votre visite il y a des ressources au pied de la page, qui vous sera utile, si vous êtes etudiant!</p>
+            <p class="s">  Des Ressources au pied de la page, qui vous sera utile, si vous êtes etudiant bien entandue!</p>
         </div>
 
        
@@ -323,7 +358,7 @@
             
             <h3>Contact</h3>
             <p class="toumba">Email:craoncheveuxdufeu@gmail.com</p>
-            <p class="mess">Pour toute information néccessaire Veuillez me laisser un message. S'il faut je vous répondrais!</p>
+            <p class="mess">Pour toute information néccessaire Veuillez me laisser un message. S'il faut je vous répondrais dans les bref dèlais :)!</p>
          
 
          </div>
@@ -350,6 +385,6 @@
     
     </script>
 
-    <footer class="f">merci de votre visite👍🙂</footer>
+    <footer class="f">Merci De Votre Visite👍🙂. See You Again</footer>
 </body>
 </html>
