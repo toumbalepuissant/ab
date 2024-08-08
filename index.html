@@ -1,401 +1,169 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head id="#tete">
-    <style>
-        .bloc{
-            width: 1536px;
-            height: 100%;
-            margin: 0 auto;
-
-            background-color:rgba(252, 249, 249, 0.5);
-            text-align: center;
-
-
-        }
-
-        @media   ( max-width: 1428px) {
-            .bloc .mess{
-                width: 90%;
-                font-size: small;
-
-            }
-            
-        }
-
-       
-       
-        @media (max-width:1024px) {
-            .bloc{
-                font-size: small;
-                width: 90%;
-
-            }
-        }
-
-       @media  (max-width:640px) {
-        .bloc{
-            font-size: x-small;
-            border: 3px;
-            width: 90%;
-
-        }
-        
-       }
-
-       @media (max-width:1024px) {
-
-        .bloc .paragraphe1{
-            font-size:small;
-            border:2px;
-            width: 90%;
-
-        }
-        
-
-        @media (max-width:1024px) {
-            .bloc .link{
-                font-size: auto;
-                width: 90%;
-
-            }
-            
-        }
-       }
-
-       @media (max-width:1024px) {
-            .bloc .nalin{
-                font-size: small;
-                width: 90%;
-
-            }
-            
-        }
-        @media (max-width:1024px) {
-            .bloc .navl{
-                font-size: auto;
-                width: 90%;
-
-            }
-            
-        }
-       
-        @media (max-width:1024px) {
-            .bloc {
-                width: 90%;
-
-            }
-            
-        }
-
-        @media (max-width:1024px) {
-            .bloc .s{
-                font-size:small;
-
-            }
-            
-        }
-       
-       
-       
-       
-
-        /* Risponsive*/
-        
-   
-       
-        div{
-            padding: 30px;
-        }
-
-        ul{
-            padding-top:2%;
-            display: block;
-            text-align: center;
-            justify-content: space-betwen;
-            padding-top:5%;
-
-
-        }
-        a{
-            text-align: center;
-            justify-content: space-between;
-            margin:5%;
-            background-color:rgba(254, 255, 254, 0.5);
-            padding: 10px;;
-            border-block:1px;
-            border-radius:5lvw;
-            border-color:rgba(236, 240, 243, 0.5);
-            border-style:outset;
-        }
-        a:hover{
-            background-color: rgba(0, 0, 0, 1.4);
-            color:white;
-            border-color:red;
-            cursor: -moz-grab;
-            padding: 5px;
-
-        }
-        h1{
-            
-            background-color: rgb(24, 48, 34);
-            height: 20svh;
-            padding-top:8%;
-            border-style:outset;
-            border-bottom:hidden;
-            border-right:hidden;
-            border-radius: 40px 4px;
-            font-size:pre;
-            width: 500px;
-            box-shadow: 50px 50px 0px  rgb(204, 209, 206)
-
-        }
-        h1:hover{
-            border-left:hidden;
-            color:white;
-            cursor:all-scroll;
-            
-        }
-
-
-        
-.biev {
-    position:initial;
-  border: 3px dashed transparent;
-  animation: rotateAnimation 2s infinite;
-  border-radius: 20%;
-  width: 500px;
-  box-shadow: 50px 50px 0px  rgb(214, 212, 212)
-
-
-}
-@keyframes rotateAnimation {
-  0% {
-    border-color: transparent transparent rgb(66, 248, 10) transparent;
-  }
-  25% {
-    border-color: rgb(42, 233, 4) transparent transparent transparent;
-  }
-  50% {
-    border-color: transparent rgb(230, 50, 5)transparent transparent;
-  }
-  75% {
-    border-color: transparent transparent transparent hwb(59 0% 0%);
-  }
-  100% {
-    border-color: transparent transparent rgb(7, 240, 26);
-  }
-}
-
-       
-
-        .nalin{
-            overflow: hidden;  
-            padding-top:6%;
-         
-        }
-        .nano{
-    float: left;
-        }
-        .gnamo{
-            float: right;
-            animation: 1s reverse;
-            animation-duration:1ms;
-            animation-delay: var(12px 15px ) infinit;
-        }
-        .na:hover{
-            padding:2%;
-
-        }
-        .navl{
-            padding: 15%;
-        }
-        .gn:hover{
-            padding:2%;
-
-        }
-        .paragraphe1{
-           
-            font-family:Arial;
-            font-size:x-large;
-            line-height: 2;
-            font-language-override: unset;
-            text-align: left;
-            
-        }
-        .apd{
-            text-decoration: underline;
-            text-transform: uppercase;
-        }
-        h3{
-            text-decoration:underline;
-            text-transform: uppercase;
-        }
-        .toumba{
-            text-transform:initial;
-            font-size:smaller;
-            color: rgb(0, green, 0, 1.5);
-        }
-        .toumba:hover{
-            cursor:help;
-            cursor:copy;
-            column-rule-color: blue;
-        }
-        .mess{
-            font-size:small;
-            text-decoration:underline;
-            border-style:double;
-            border-radius:39%;
-            direction: rtl;
-            direction: unset;
-            color:rgb(238, 190, 190);
-
-        }
-        .mess:hover{
-           color:white;
-            cursor:help;    
-        }
-        .link{
-            background-color:rgba(100, 0, 799, 2.5);
-            border-radius: 30px;
-        }
-        .li{
-            background-color:green;
-            border:hidden;
-            color:white;
-            background: scroll;
-        }
-        .li:hover{
-            background-color:rgba(4, 241, 4, 0.1);
-            background: padding-box;
-            cursor:wait;
-        }
-        .R{
-            text-align: center;
-            padding-bottom:2%;
-            text-decoration: aliceblue;
-            text-transform: uppercase;
-            color:rgb(0, 0, 0);
-            text-decoration: solid;
-
-        }
-        .s{
-            color:rgb(122, 114, 114);
-            font-size: medium;
-            text-align: center;
-            padding-top:2%;
-            text-decoration: underline;
-        }
- hgroup{
-            color:rgb(0, 0, 0);
-            animation: colorChange 5s infinite alternate;
-
-}
-        @keyframes colorChange {
-           
-
-50%{ color:rgb(43, 17, 196);
-}
-      100%{
-        color:rgb(0, 0, 0);}      
-        }
-
-        
-    </style>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site-web</title>
+    <title>web-site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
 
-    <nav id="#tete" class="navigations">
-        <ul>
-                <a href="#tete" onclick="alert('Vous êtes à l_Accuiel comme ça!'); ">Accuiel</a>
-                <a href="#Appropos">Appropos</a>
-                <a href="#contact">Contact</a>
-        </ul> 
-    </nav>
-</head>
-
-<body class="bloc">
-    <div >
-
-       
-        <div class="biev">
-
-            <h1 class="monH"> Bienvenue<br> Des outiles de navigations sont à votre disposition pour plus d'information!😉</h1>
-
-        </div>        
-
-        <div class="nalin">
-            <a class="nano" href="#tete">▲</a>
-            <a class="gnamo" href="#contact">&#9660</a>
-        </div>
-
-        <div id="Appropos" class="ap"> 
-            <h3 class="apd">Appropos</h3>
-        
-            <hgroup class="paragraphe1"> 
-                Bonjour, Je m'appelle Aliou etudiant en 1er systèmes numériques au Lycée Marc Seguin à Vénissieux,
-                passionné d'informatique voir les segments des informations de la téchnologies, plutard j'envissage d'être développeur web,
-                opinâtre, curieux et intrépide et j'adore le sport, surtout le sport du combat et le football pour les heure-perdue et lecture
-              
-             , sorti  amical, c'est quelque choses qui m'arrive très rare, donc on peut dit que je suis casanier,
-                Il est très facile de me rencontrer au sport qu'ailleur!  pour finir j'adore la couleur verte.
-
-                
-        
-            </hgroup>
-            <p class="s">  Des Ressources au pied de la page, qui vous sera utile, si vous êtes etudiant bien entandue!</p>
-        </div>
-
-       
-
-           
-       
-            
-        <div class="navl">
-            <a class="na" href="#tete">▲</a>
-            <a class="gn" href="#contact">&#9660;</a>
-        </div>
-
-         <div id="contact" class="zoneSurvolee" onclick="afficherMessage()" onwaiting="afficherMessage()">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-            
-            <h3>Contact</h3>
-            <p class="toumba">Email:craoncheveuxdufeu@gmail.com</p>
-            <p class="mess">Pour toute information néccessaire Veuillez me laisser un message. S'il faut je vous répondrais dans les bref dèlais :)!</p>
-         
-
-         </div>
-
-            <div class="link">
-                <p class="R">Ressources!</p>
-                <a class="li" href="https://www.JavaScript.com">JavaScript</a>
-
-                <a class="li" href="https://www.css.com">CSS</a>
-                <a class="li" href="https://www.html.com">HTML</a>
-
-            </div>
-
-        
-    </div>
-    <script> 
-    function afficherMessage() {
-        alert('merci de votre visite à bientôt!');
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
     }
+    </style>
 
+    <style>
+         body{
+            display: grid;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            align-items: center;
 
-    alert('Vous naviguez en tout sécurité!');
+            justify-content: center;
+            background-color: gray;
 
-    <button onclick="confirmerFermeture();">Fermer le site</button>
-
-    function confirmerFermeture() {
-        if (confirm("Êtes-vous sûr de vouloir quitter le site ?")) {
-            // Code pour fermer le site (redirection, etc.)
         }
-    }
-    
-    </script>
 
-    <footer class="f">Merci De Votre Visite🙂. See You Again</footer>
+   
+
+p {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+        h1{
+            background-color: blue;
+            color:white;
+            height: 50px;
+            text-align: center;
+            padding-top: 15px;
+            border-radius: 0px 100%;
+            box-shadow: 0px 0px 100Px 100px;
+
+        }
+        li{
+            list-style-type: none;
+            font-size:25px;
+            color:white;
+            padding-bottom: 15px;
+            color:black;
+        }
+   button{
+    background-color: #75fb4c;
+    border:hidden;
+    border-radius:100%;
+    width: -50px;
+    height: 0px;
+    box-shadow: 8px 50px 100Px 15px #75FB4C;
+
+
+   }
+   button:hover svg{
+    color:red;
+   }
+        .mesP{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:50px;
+            background-position: fixed;
+            
+        }
+        p{
+            display: none;
+            font-size:12em;
+            margin: 0;
+            animation: apparaître 3s linear infinite;
+
+
+        }
+        @keyframes apparaître {
+            0%{ opacity: 0;}
+            100%{opacity: 100%;
+                scale: 2;
+            }
+            
+        }
+        .heure, .minutes, .secondes{
+            display: inline-table;
+            vertical-align: top;
+            margin: 0 5px;
+        }
+        span{
+            color:white;
+            font-size:90px;
+            position: initial;
+        }
+
+        #drop:hover p{
+            display: block;
+        }
+      
+        #mysvg:hover{
+            fill:rgb(255, 196, 0);
+            animation: none;
+
+        }
+        #mysvg{
+            animation: movement 5s linear infinite;
+        }
+        @keyframes movement {
+            from{ transform: rotate(0deg);} 
+            to{transform: rotate(360deg);
+            opacity: 0;}
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Bienvenue chez Kab</h1>
+    <li>Kab est votre entreprise qui regroupe tous les aspets informatique, we are there for help in anythins and everywhere, your are wellcome!</li>
+    <div class="contenair" id="drop">
+        <button class="bt" id="drop"><svg xmlns="http://www.w3.org/2000/svg" id="mysvg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#75FB4C">
+            <path d="M320-160h320v-120q0-66-47-113t-113-47q-66 0-113 47t-47 113v120ZM160-80v-80h80v-120q0-61 28.5-114.5T348-480q-51-32-79.5-85.5T240-680v-120h-80v-80h640v80h-80v120q0 61-28.5 114.5T612-480q51 32 79.5 85.5T720-280v120h80v80H160Z"/></svg></button>
+       <br> <span>Il est </span>
+
+       <div class="mesP"> 
+        <p id="h" class="heure">00</p> 
+                <p id="h" class="here">:</p> 
+
+        <p id="m" class="minutes">00</p>
+        <p id="h" class="hure">:</p> 
+
+        <p id="s" class="seconde">00</p></div>
+    </div>
+    
+
+<script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            document.getElementById('h').textContent = hours;
+            document.getElementById('m').textContent = minutes;
+            document.getElementById('s').textContent = seconds;
+        }
+
+        // Mise à jour de l'heure toutes les secondes
+        setInterval(updateClock, 1000);
+
+        // Initialisation de l'affichage de l'heure
+        updateClock();
+    </script>
+    </script>
 </body>
 </html>
